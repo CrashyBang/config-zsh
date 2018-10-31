@@ -1,0 +1,26 @@
+#ensures the terminal uses 256 colour if available
+#chrissicool/zsh-256color
+
+#automatically sets the window title based off the current command
+jreese/zsh-titles
+
+#things required for the pure theme
+mafredri/zsh-async
+
+#custom fork of the pure theme                   
+sindresorhus/pure
+
+#Double tab esc for sudo of previous or current command
+hcgraf/zsh-sudo
+
+#Directory Jumper
+rupa/z  
+                                
+#automatically suggests commands based off our previous history
+zsh-users/zsh-autosuggestions
+
+#Syntax highlighting for our commands (MUST BE LAST, BUT BEFORE HISTORY-SUBSTRING)
+zsh-users/zsh-syntax-highlighting
+
+#Substring matching on our history (MUST BE LAST)
+zsh-users/zsh-history-substring-search
