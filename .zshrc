@@ -17,7 +17,9 @@ setopt extendedglob
 
 #Setup tab-completion
 fpath=(~/.zsh/completion $fpath)
+
 #autoload -Uz compinit && compinit -i
+#refresh cache every 24 hours
 autoload -Uz compinit 
 if [[ -n ${HOME}/.zcompdump(#qN.mh+24) ]]; then
     compinit;
