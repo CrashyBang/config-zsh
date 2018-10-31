@@ -1,6 +1,11 @@
 #Use emacs key bindings
 bindkey -e
 
+# Setup PATH
+# Standard folder I use across desktop configs
+# Inludes things like lock scripts, bars, etc...
+PATH="${HOME}/.utility:$PATH"
+
 #Load Antibody
 source <(antibody init)
 antibody bundle < ~/.zsh/zsh_plugins.txt
