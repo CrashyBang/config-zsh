@@ -1,0 +1,5 @@
+*
+!/.gitignore.d/config-zsh
+!/.zsh
+!/.zshrc
+!/.zsh/zsh_plugins.txt
