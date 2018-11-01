@@ -5,6 +5,8 @@ bindkey -e
 # Standard folder I use across desktop configs
 # Inludes things like lock scripts, bars, etc...
 PATH="${HOME}/.utility:$PATH"
+# Global node modules
+PATH="${HOME}/.node_modules/bin:$PATH"
 
 #Load Antibody
 source <(antibody init)
