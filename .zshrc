@@ -15,6 +15,10 @@ antibody bundle < ~/.zsh/zsh_plugins.txt
 # Faster static loading
 #source ~/.zsh/zsh_plugins.sh
 
+# Alias
+alias vc="nvim ~/.config/nvim/init.vim"
+alias zc="nvim ~/.zshrc"
+
 #Setup basic ZSH options
 HISTSIZE=100
 SAVEHIST=10000
