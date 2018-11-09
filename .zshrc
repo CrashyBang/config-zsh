@@ -7,6 +7,12 @@ bindkey -e
 PATH="${HOME}/.utility:$PATH"
 # Global node modules
 PATH="${HOME}/.node_modules/bin:$PATH"
+# Rust
+PATH="${HOME}/.cargo/bin:$PATH"
+# Fzf (Installed via NeoVim)
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Use ripgrep in fzf
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 
 #Load Antibody
 source <(antibody init)
