@@ -9,10 +9,10 @@ PATH="${HOME}/.utility:$PATH"
 PATH="${HOME}/.node_modules/bin:$PATH"
 # Rust
 PATH="${HOME}/.cargo/bin:$PATH"
-# Fzf (Installed via NeoVim)
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # Use ripgrep in fzf
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
+# Fzf (Installed via NeoVim)
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #Load Antibody
 source <(antibody init)
@@ -24,6 +24,15 @@ antibody bundle < ~/.zsh/zsh_plugins.txt
 # Alias
 alias vc="nvim ~/.config/nvim/init.vim"
 alias zc="nvim ~/.zshrc"
+alias wifi="nmcli d wifi"
+
+# functions
+view() {
+    if [ "$1" != "" ] 
+    then
+        mupdf-gl "$1" > /dev/null 2>&1 &
+    fi
+}
 
 #Setup basic ZSH options
 HISTSIZE=100
