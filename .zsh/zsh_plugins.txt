@@ -1,14 +1,8 @@
-#ensures the terminal uses 256 colour if available
-#chrissicool/zsh-256color
+# Theme
+# denysdovhan/spaceship-prompt
 
 #automatically sets the window title based off the current command
 jreese/zsh-titles
-
-#things required for the pure theme
-mafredri/zsh-async
-
-#custom fork of the pure theme                   
-sindresorhus/pure
 
 #Double tab esc for sudo of previous or current command
 hcgraf/zsh-sudo

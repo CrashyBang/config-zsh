@@ -1,18 +1,20 @@
 #Use emacs key bindings
 bindkey -e
 
-# Setup PATH
-# Standard folder I use across desktop configs
-# Inludes things like lock scripts, bars, etc...
+# Utilites
 PATH="${HOME}/.utility:$PATH"
 # Global node modules
 PATH="${HOME}/.node_modules/bin:$PATH"
 # Rust
 PATH="${HOME}/.cargo/bin:$PATH"
+
 # Use ripgrep in fzf
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 # Fzf (Installed via NeoVim)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# https://github.com/getantibody/antibody/issues/68
+setopt PROMPT_SUBST
 
 #Load Antibody
 source <(antibody init)
@@ -57,3 +59,8 @@ zstyle ':completion:*' menu select
 #Declare our keybindings
 bindkey -M emacs '^[[A' history-substring-search-up     # Up Arrow: Triggers history substring match backwards (later)
 bindkey -M emacs '^[[B' history-substring-search-down   #Down Arrow: Triggers history substring match forwards (earlier)
+
+export PULSE_SERVER=unix:/tmp/pulse-PKdhtXMmr18n/native
+
+# Print neofetch config on load
+neofetch --ascii ~/.config/neofetch/ascii/void
