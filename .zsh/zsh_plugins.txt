@@ -1,5 +1,5 @@
 # Theme
-# denysdovhan/spaceship-prompt
+denysdovhan/spaceship-prompt
 
 #automatically sets the window title based off the current command
 jreese/zsh-titles
