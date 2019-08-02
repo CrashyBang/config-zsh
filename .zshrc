@@ -7,6 +7,8 @@ PATH="${HOME}/.utility:$PATH"
 PATH="${HOME}/.node_modules/bin:$PATH"
 # Rust
 PATH="${HOME}/.cargo/bin:$PATH"
+# Pip
+# PATH="${HOME}/.local/bin:$PATH"
 
 # Use ripgrep in fzf
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
@@ -27,6 +29,8 @@ antibody bundle < ~/.zsh/zsh_plugins.txt
 alias vc="nvim ~/.config/nvim/init.vim"
 alias zc="nvim ~/.zshrc"
 alias wifi="nmcli d wifi"
+alias dcu="docker-compose up > ./docker-compose.log 2>&1 &"
+alias dcs="docker-compose stop"
 
 # functions
 view() {
