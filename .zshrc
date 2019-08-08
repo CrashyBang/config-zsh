@@ -11,7 +11,7 @@ PATH="${HOME}/.cargo/bin:$PATH"
 # PATH="${HOME}/.local/bin:$PATH"
 
 # Use ripgrep in fzf
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
+# export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 # Fzf (Installed via NeoVim)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
