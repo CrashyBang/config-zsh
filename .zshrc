@@ -7,6 +7,8 @@ PATH="${HOME}/.utility:$PATH"
 PATH="${HOME}/.node_modules/bin:$PATH"
 # Rust
 PATH="${HOME}/.cargo/bin:$PATH"
+# Pip
+# PATH="${HOME}/.local/bin:$PATH"
 
 # Use ripgrep in fzf
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
@@ -30,6 +32,8 @@ alias zc="nvim ~/.zshrc"
 # &! https://stackoverflow.com/questions/19302913/exit-zsh-but-leave-running-jobs-open
 alias cnc="google-chrome-stable --disable-web-security --user-data-dir --test-type > /tmp/google-chrome-stable-no-security.log 2>&1 &!"
 alias wifi="nmcli d wifi"
+alias dcu="docker-compose up > ./docker-compose.log 2>&1 &"
+alias dcs="docker-compose stop"
 
 # functions
 view() {
