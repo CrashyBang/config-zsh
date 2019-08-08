@@ -26,6 +26,9 @@ antibody bundle < ~/.zsh/zsh_plugins.txt
 # Alias
 alias vc="nvim ~/.config/nvim/init.vim"
 alias zc="nvim ~/.zshrc"
+# -- test-type https://groups.google.com/a/chromium.org/forum/#!topic/chromium-discuss/O4WpwWvGz4A
+# &! https://stackoverflow.com/questions/19302913/exit-zsh-but-leave-running-jobs-open
+alias cnc="google-chrome-stable --disable-web-security --user-data-dir --test-type > /tmp/google-chrome-stable-no-security.log 2>&1 &!"
 alias wifi="nmcli d wifi"
 
 # functions
@@ -60,7 +63,7 @@ zstyle ':completion:*' menu select
 bindkey -M emacs '^[[A' history-substring-search-up     # Up Arrow: Triggers history substring match backwards (later)
 bindkey -M emacs '^[[B' history-substring-search-down   #Down Arrow: Triggers history substring match forwards (earlier)
 
-export PULSE_SERVER=unix:/tmp/pulse-PKdhtXMmr18n/native
+# export PULSE_SERVER=unix:/tmp/pulse-PKdhtXMmr18n/native
 
 # Print neofetch config on load
-neofetch --ascii ~/.config/neofetch/ascii/void
+neofetch --ascii ~/.config/neofetch/ascii/ubuntu
